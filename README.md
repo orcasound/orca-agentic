@@ -1,14 +1,17 @@
-# orca-agentic — Agentic AI for Marine Acoustic Monitoring
+# Agentic AI for Marine Acoustic Monitoring
 
-**Mission:** Move Orcahello beyond a single CNN classifier into an **agentic system** that fuses multiple evidence sources (acoustics, vessel context, human reports, optional CLAP) to **reason, learn, and communicate**—unlocking higher confidence alerts, better science, and real funding pathways.
+README draft 10/8/2025 - generated interactively by @adrmac using ChatGPT
+Planning for a [5-day AI Agents Intensive Course with Google]([url](https://rsvp.withgoogle.com/events/google-ai-agents-intensive_2025)), Nov 10 - 14, 2025
+
+**Mission:** Move Orcahello beyond a single CNN classifier into an **agentic system** that fuses multiple evidence sources (acoustics, vessel context, human reports, optional CLAP) to **reason, learn, and communicate**—resulting in higher confidence alerts, scalable funding pathways, and better contributions to science.
 
 ---
 
 ## Why this matters (now)
 - **Today:** Orcahello = automated classifier pipeline (CNN → threshold → moderator check → alert). Effective, but **not adaptive** and **not context-aware**.  
-- **Next:** An **agent** that cross-checks detections with PSD “loudness” + AIS, human report density/keywords, and (optionally) CLAP semantic similarity; remembers recent context; explains decisions; and improves over time.
+- **Next:** An **agent** that cross-checks detections with vessel data, human reports, and (optionally) CLAP semantic similarity. The agent will remember recent context; explain decisions; and improve over time.
 
-**Outcome:** Stronger real-time decisions for conservation + compliance use cases (ports, shipping, offshore energy) and a clearer story for grants/sponsorship.
+**Outcomes:** Higher confidence real-time alerts, making Orcasound more competitive for grants/sponsorship as an environmental monitoring platform, capturing potential opportunities with ports, regional and national government, shipping, and offshore energy.
 
 ---
 
@@ -22,7 +25,8 @@
 
 ## Related repos (how this fits)
 - **`orcasound-next`** — experimental Next.js UI showing agent decisions, traces, and insights (read-only client).  
-- **`ambient-sound-analysis-api`** — Python/FastAPI service for **HLS→WAV**, **PSD (banded)**, and acoustic metrics; also used for backfills/archival analysis.  
+- **`ambient-sound-analysis-api`** — Python/FastAPI service for **HLS→WAV**, **PSD (banded)**, and acoustic metrics; also used for backfills/archival analysis.
+- **`aifororcas-livesystem`** - production code for Orcahello CNN, sending data to the **`orcasite`** live listening app and moderator interface
 - **`orca-clap`** — optional CLAP plugin that provides **semantic similarity** and **nearest-examples retrieval** (plus caption proposals) for multi-species and annotation assist.  
 - **(This repo) `orca-agentic`** — the **orchestration brain** that calls those tools, fuses evidence, manages memory, and emits explainable decisions.
 
