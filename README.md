@@ -1,6 +1,7 @@
 # Agentic AI for Marine Acoustic Monitoring
 
 *README draft 10/8/2025 - generated interactively by @adrmac using ChatGPT*
+
 *Planning for [5-day AI Agents Intensive Course with Google]([url](https://rsvp.withgoogle.com/events/google-ai-agents-intensive_2025)), Nov 10 - 14, 2025 https://rsvp.withgoogle.com/events/google-ai-agents-intensive_2025*
 
 **Mission:** Move Orcahello beyond a single CNN classifier into an **agentic system** that fuses multiple evidence sources (acoustics, vessel context, human reports, optional CLAP) to **reason, learn, and communicate**—resulting in higher confidence alerts, scalable funding pathways, and better contributions to science.
